@@ -27,7 +27,8 @@ Ce logiciel s'intègre parfaitement avec l'utilisation du launcher Quedalle de M
 
 Téléchargez la dernière version Ici.
 
-Disponible aussi sur fdroid.org.
+Remarque : 
+Je voulais le mettre sur fdroid, mais quand j'ai vu le bazar qu'il faut pour soummettre l'appli, une simple version sur github release fera très bien l'affaire.
 
 Merci pour vos retours.
 Fabien.
