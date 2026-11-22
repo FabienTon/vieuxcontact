@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vieuxcontact"
+    namespace = "fr.fabienton.vieuxcontact"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.vieuxcontact"
+        applicationId = "fr.fabienton.vieuxcontact"
         minSdk = 23
         targetSdk = 37
         versionCode = 1
