@@ -1,1 +1,4 @@
+VieuxContact provides a simple interface for searching contacts, designed for older people and people with visual impairments.
+
+The app is written entirely in Kotlin and does not rely on internet access, analytics, or network services.
 
