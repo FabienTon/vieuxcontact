@@ -1,1 +1,2 @@
+A simple contact search interface for older and visually impaired people.
 
