@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <!-- Zone photo ou initiale : environ le tiers de l'écran -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#37474F">
+
+        <ImageView
+            android:id="@+id/photoContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Photo du contact"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/initialContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#37474F"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="96sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Le reste de l'écran peut défiler si nécessaire -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="#1B5E20"
+                android:text="Téléphone"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numeroContact"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#340808"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Numéro du contact"
+                android:textColor="#FFFF00"
+                android:textSize="37sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/boutonAppeler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="#DFDFDF"
+                    android:text="Appeler"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/boutonMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="#DFDFDF"
+                    android:text="Message"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/boutonFavori"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="#DFDFDF"
+                    android:text="Ajouter aux favoris"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/boutonModifier"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="#DFDFDF"
+                    android:text="Modifier"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/boutonFermerDcontact"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/fermer_button"
+                app:backgroundTint="@null"
+                android:text="Fermer"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

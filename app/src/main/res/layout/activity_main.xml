@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:background="#1B5E20"
+        android:text="Contacts"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/listeContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <!-- Les contacts réels seront ajoutés ici par le code Kotlin. -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <EditText
+        android:id="@+id/recherche"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/search_border"
+        android:hint="Rechercher un contact"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="#FFFF00"
+        android:textColorHint="#FFFF00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/boutonFermer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/fermer_button"
+        app:backgroundTint="@null"
+        android:text="Fermer"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</LinearLayout>
