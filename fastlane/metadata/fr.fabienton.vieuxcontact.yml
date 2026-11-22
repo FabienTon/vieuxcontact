@@ -1,0 +1,15 @@
+Categories:
+  - Phone & SMS
+License: GPL-3.0-only
+AutoName: VieuxContact
+
+SourceCode: https://github.com/FabienTon/vieuxcontact
+RepoType: git
+Repo: https://github.com/FabienTon/vieuxcontact.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 44fb169f01c7521a4b81e4004dae0a5ffb0cc861
+    gradle:
+      - yes
